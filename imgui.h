@@ -28,6 +28,7 @@
 #define IMGUI_VERSION       "1.89.9"
 #define IMGUI_VERSION_NUM   18990
 #define IMGUI_HAS_TABLE
+#define IMGUI_HAS_STACK_LAYOUT      1 // Stack-Layout PR #846
 #define IMGUI_HAS_VIEWPORT          // Viewport WIP branch
 #define IMGUI_HAS_DOCK              // Docking WIP branch
 
@@ -1740,6 +1741,7 @@ enum ImGuiStyleVar_
     ImGuiStyleVar_SeparatorTextAlign,  // ImVec2    SeparatorTextAlign
     ImGuiStyleVar_SeparatorTextPadding,// ImVec2    SeparatorTextPadding
     ImGuiStyleVar_DockingSeparatorSize,// float     DockingSeparatorSize
+    ImGuiStyleVar_LayoutAlign,         // float     LayoutAlign
     ImGuiStyleVar_COUNT
 };
 
